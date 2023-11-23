@@ -58,3 +58,38 @@ p[draggable="false"]{
 ```
 ## font properties
 
+## box Margin properties
+height
+width
+border=10px solid black;
+border-top=0px;
+border-width= 10px 2px 20px 30px
+padding=20px;
+margin=10px;
+
+## cascading specificity inheritence
+position
+```
+li{
+color: red;
+color:blue;
+}
+```
+specificity
+```
+<li id="first-id" class="first-class" draggable>
+li{color:"blue}
+.first-class{color=:red"}
+li[draggable]{color:"purple"}
+#first-id{color:"orange"}
+```
+type
+```
+<link href="">
+<style></style>
+<h1 style:"color:red">
+```
+importance
+```
+color:red
+color:red !important
